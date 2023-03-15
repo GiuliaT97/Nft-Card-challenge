@@ -1,0 +1,217 @@
+:root{
+
+--ff-outfit: 'Outfit', sans-serif;
+
+}
+
+
+body{
+
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    place-content: center;
+    margin:1rem;
+}
+
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    background-color: hsl(216, 50%, 16%);
+    overflow: hidden;
+    border-radius: 12px;
+   
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 350px;
+    min-height: 550px;
+
+}
+
+.img_content{
+
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    margin-left:1rem;
+    margin-right: 1rem;
+
+}
+
+
+.img_content img{
+
+    width: 100%;
+
+}
+
+.img_content:hover .overlay{
+    cursor: pointer;
+    visibility: visible;
+
+}
+
+.overlay{
+    
+    position: absolute;
+    background-color: hsla(178, 100%, 50%,0.6);
+    width: 285px;
+    height: 285px;
+    border-radius: 8px;
+    visibility:hidden
+}
+
+.overlay img{
+    
+    width: 15%;
+    position: absolute;
+    top:45%;
+    left:42%;
+
+}
+
+
+.text_content{
+
+display: flex;
+flex-direction: column;
+margin: 1rem;
+
+}
+
+.text_content h1{
+
+font-family: var(--ff-outfit);
+font-size: 20px;
+font-weight: 600;
+color: white;
+margin-top: 0.5rem;
+
+}
+
+
+.text_content h1:hover{
+
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+
+}
+
+.text_content p{
+
+    color:hsl(215, 51%, 70%);
+    font-family: var(--ff-outfit);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top:1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.information{
+
+    display: flex;
+    padding-right: 0;
+    margin-bottom:1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.left_info{
+
+    display:flex;
+    width: 100%;
+
+}
+
+.left_info span{
+
+    color: hsl(178, 100%, 50%);
+    font-family: var(--ff-outfit);
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+
+}
+
+
+.right_info{
+
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+
+.right_info span{
+
+    color:hsl(215, 51%, 70%);
+    font-family: var(--ff-outfit);
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    margin-left: 0.5rem; 
+
+}
+
+
+hr{
+
+    border-top: 1px solid hsl(215, 32%, 27%);
+
+}
+
+
+.creator{
+
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+
+}
+
+.profile_img{
+
+    border-radius: 50%;
+    overflow: hidden;
+    display:flex;
+    border: solid white 1px;
+    width: 2rem;
+
+}
+
+.creator_name{
+
+    font-family: var(--ff-outfit);
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 1rem;
+   
+}
+
+
+.creator_name span{
+color: white; 
+font-weight:400
+}
+
+
+.creator_name span:hover{
+
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+
+}
+
+
+
+.attribution{
+
+    margin-top: 5rem;
+
+}
